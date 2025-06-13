@@ -1,80 +1,87 @@
 import Image from "next/image";
-import ServiceCard from './components/ServiceCard';
-import {Oxanium} from 'next/font/google';
-import localFont from 'next/font/local';
-const myFont = localFont({
-  src: '../public/fonts/Lora-VariableFont_wght.ttf',
-  display: 'swap',
-  variable: '--font-myFont',
-});
-const oxanium = Oxanium({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-lora',
-  weight: ['400', '500', '600', '700'],
-});
+import ServiceCard from "./components/ServiceCard";
+// import { Oxanium } from "next/font/google";
+// import localFont from "next/font/local";
+// const myFont = localFont({
+//   src: '../public/fonts/Lora-VariableFont_wght.ttf',
+//   display: 'swap',
+//   variable: '--font-myFont',
+// });
+// const oxanium = Oxanium({
+//   subsets: ['latin'],
+//   display: 'swap',
+//   variable: '--font-lora',
+//   weight: ['400', '500', '600', '700'],
+// });
 
 export default function LandingPage() {
   const businessServices = [
     {
-      title: 'Web Development',
-      description: 'Custom websites and web applications built with modern technologies.',
-      icon: '🌐',
-      gradient: 'bg-gradient-to-tr from-emerald-600 to-emerald-900',
+      title: "Web Development",
+      description:
+        "Custom websites and web applications built with modern technologies.",
+      icon: "🌐",
+      gradient: "bg-gradient-to-tr from-emerald-600 to-emerald-900",
     },
     {
-      title: 'Mobile Apps',
-      description: 'Native and cross-platform mobile applications for iOS and Android.',
-      icon: '📱',
-      gradient: 'bg-gradient-to-tr from-blue-600 to-blue-900',
+      title: "Mobile Apps",
+      description:
+        "Native and cross-platform mobile applications for iOS and Android.",
+      icon: "📱",
+      gradient: "bg-gradient-to-tr from-blue-600 to-blue-900",
     },
     {
-      title: 'Cloud Solutions',
-      description: 'Scalable cloud infrastructure and deployment services.',
-      icon: '☁️',
-      gradient: 'bg-gradient-to-br from-purple-600 to-purple-900',
+      title: "Cloud Solutions",
+      description: "Scalable cloud infrastructure and deployment services.",
+      icon: "☁️",
+      gradient: "bg-gradient-to-br from-purple-600 to-purple-900",
     },
   ];
 
   const studentServices = [
     {
-      title: 'Project Development',
-      description: 'Get help with your academic projects and learn while building.',
-      icon: '🎓',
-      gradient: 'bg-gradient-to-br from-amber-600 to-amber-900',
+      title: "Project Development",
+      description:
+        "Get help with your academic projects and learn while building.",
+      icon: "🎓",
+      gradient: "bg-gradient-to-br from-amber-600 to-amber-900",
     },
     {
-      title: 'Code Review',
-      description: 'Expert review of your code with detailed feedback and improvements.',
-      icon: '📝',
-      gradient: 'bg-gradient-to-br from-rose-600 to-rose-900',
+      title: "Code Review",
+      description:
+        "Expert review of your code with detailed feedback and improvements.",
+      icon: "📝",
+      gradient: "bg-gradient-to-br from-rose-600 to-rose-900",
     },
     {
-      title: 'Learning Support',
-      description: 'One-on-one mentoring and guidance for technical concepts.',
-      icon: '📚',
-      gradient: 'bg-gradient-to-br from-cyan-600 to-cyan-900',
+      title: "Learning Support",
+      description: "One-on-one mentoring and guidance for technical concepts.",
+      icon: "📚",
+      gradient: "bg-gradient-to-br from-cyan-600 to-cyan-900",
     },
   ];
 
   const testimonials = [
     {
-      name: 'John Doe',
-      role: 'Business Owner',
-      content: 'Alamny helped us transform our business with their innovative solutions.',
-      image: '👨‍💼',
+      name: "John Doe",
+      role: "Business Owner",
+      content:
+        "Alamny helped us transform our business with their innovative solutions.",
+      image: "👨‍💼",
     },
     {
-      name: 'Jane Smith',
-      role: 'Computer Science Student',
-      content: 'The project support I received was invaluable for my academic success.',
-      image: '👩‍🎓',
+      name: "Jane Smith",
+      role: "Computer Science Student",
+      content:
+        "The project support I received was invaluable for my academic success.",
+      image: "👩‍🎓",
     },
     {
-      name: 'Mike Johnson',
-      role: 'Startup Founder',
-      content: 'Their expertise in web development helped us launch our product quickly.',
-      image: '👨‍💻',
+      name: "Mike Johnson",
+      role: "Startup Founder",
+      content:
+        "Their expertise in web development helped us launch our product quickly.",
+      image: "👨‍💻",
     },
   ];
 
@@ -89,7 +96,8 @@ export default function LandingPage() {
               <span className="text-emerald-400"> Digital Reality</span>
             </h1>
             <p className={`text-xl text-gray-300 mb-8`}>
-              Empowering businesses and students with innovative technology solutions
+              Empowering businesses and students with innovative technology
+              solutions
             </p>
             <div className="flex justify-center gap-4">
               <a
